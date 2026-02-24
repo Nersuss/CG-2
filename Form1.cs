@@ -52,68 +52,6 @@ namespace graphics_2
             }
         }
 
-        //void DrawLineL(double x, double y, int x2, int y2, Graphics g, Pen p)
-        //{
-        //    int w = x2 - Convert.ToInt32(x);
-        //    int h = y2 - Convert.ToInt32(y);
-        //    int dx1 = 0, dy1 = 0, dx2 = 0, dy2 = 0;
-        //    if (w < 0) dx1 = -1; else if (w > 0) dx1 = 1;
-        //    if (h < 0) dy1 = -1; else if (h > 0) dy1 = 1;
-        //    if (w < 0) dx2 = -1; else if (w > 0) dx2 = 1;
-        //    int longest = Math.Abs(w);
-        //    int shortest = Math.Abs(h);
-        //    if (!(longest > shortest))
-        //    {
-        //        longest = Math.Abs(h);
-        //        shortest = Math.Abs(w);
-        //        if (h < 0) dy2 = -1; else if (h > 0) dy2 = 1;
-        //        dx2 = 0;
-        //    }
-        //    bool result = false;
-        //    bool flag = false;
-        //    int numerator = longest >> 1;
-        //    for (int m = 0; m <= longest; m++)
-        //    {
-        //        if (flag == true)
-        //        {
-        //            return;
-        //        }
-        //        int j = File_OBJ.VertexsN.Count - 1;
-        //        for (int i = 0; i < File_OBJ.VertexsN.Count; i++)
-        //        {
-        //            if (((File_OBJ.VertexsN[i].y < y && File_OBJ.VertexsN[j].y >= y || File_OBJ.VertexsN[j].y < y
-        //                && File_OBJ.VertexsN[i].y >= y) &&
-        //            (File_OBJ.VertexsN[i].x + (y - File_OBJ.VertexsN[i].y) / (File_OBJ.VertexsN[j].y - File_OBJ.VertexsN[i].y)
-        //            * (File_OBJ.VertexsN[j].x - File_OBJ.VertexsN[i].x) < x)))
-
-        //            {
-        //                result = !result;
-        //                break;
-        //            }
-        //            j = i;
-        //        }
-        //        if (result == false)
-        //        {
-        //            //putpixel(x, y, g, p);
-        //        }
-        //        else { flag = true; }
-
-
-        //        numerator += shortest;
-        //        if (!(numerator < longest))
-        //        {
-        //            numerator -= longest;
-        //            x += dx1;
-        //            y += dy1;
-        //        }
-        //        else
-        //        {
-        //            x += dx2;
-        //            y += dy2;
-        //        }
-        //    }
-
-        //}
         private void PaintOBJ()
         {
             if (!File_OBJ.loaded) return;
@@ -152,11 +90,7 @@ namespace graphics_2
 
                 }
             }
-            //DrawLineL(120, 300, 240, 210, g, p);
-            //DrawLineL(360, 300, 240, 210, g, p);
-            //DrawLineL(240, 70, 240, 210, g, p);
         }
-
 
         class Point3d
         {
